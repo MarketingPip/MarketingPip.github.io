@@ -113,7 +113,13 @@
 }
     </style>
     <!-- External CSS -->
+<!-- Preload CSS asynchronously -->
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+<!-- Fallback for browsers that don't execute JavaScript -->
+<noscript>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+</noscript>
 
     
     <!-- Google Fonts -->
