@@ -21,7 +21,6 @@ jobs:
           node-version: 20
 
       - name: Build Website 🏗️
-        working-directory: website
         # Add the env block here
         env:
           NODE_ENV: production
