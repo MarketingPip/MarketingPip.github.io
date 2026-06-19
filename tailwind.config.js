@@ -1,23 +1,31 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./**/*.{html,js}', '!./node_modules/**/*'],
+  content: [
+    './src/**/*.html',
+    './src/**/*.js',
+  ],
   theme: {
     extend: {
-      colors: {
-        primary: '#8B5CF6',
-        secondary: '#EC4899',
-        accent: '#22D3EE',
-        dark: '#0F172A',
-        'text-primary': '#F8FAFC',
-      },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
-        display: ['Space Grotesk', 'sans-serif'],
+        serif: ['Playfair Display', 'serif'],
       },
-    },
+      colors: {
+        stone: {
+          50: '#fafaf9',
+          100: '#f5f5f4',
+          200: '#e7e5e4',
+          300: '#d6d3d1',
+          400: '#a8a29e',
+          500: '#78716c',
+          600: '#57534e',
+          900: '#1c1917',
+        },
+        amber: {
+          900: '#78350f',
+        },
+      }
+    }
   },
-    plugins: [
-    require('tailwindcss'),
-    require('autoprefixer'),
-  ],
-};
+  plugins: [],
+}
