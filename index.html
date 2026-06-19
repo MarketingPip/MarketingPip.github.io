@@ -22,7 +22,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -39,6 +39,7 @@
               300: '#d6d3d1',
               400: '#a8a29e',
               500: '#78716c',
+              600: '#57534e',
               900: '#1c1917',
             },
             amber: {
@@ -154,10 +155,10 @@
     <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
       <a href="#" class="serif text-xl font-bold tracking-tight" aria-label="Jared Van Valkengoed home">J.V.V.</a>
       <ul class="hidden md:flex gap-8 list-none">
-        <li><a href="#projects" class="text-xs uppercase tracking-widest text-stone-500 hover:text-stone-900 transition-colors font-medium">Projects</a></li>
-        <li><a href="#about" class="text-xs uppercase tracking-widest text-stone-500 hover:text-stone-900 transition-colors font-medium">About</a></li>
-        <li><a href="https://github.com/MarketingPip" target="_blank" rel="noopener noreferrer" class="text-xs uppercase tracking-widest text-stone-500 hover:text-stone-900 transition-colors font-medium">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/jared-van-valkengoed" target="_blank" rel="noopener noreferrer" class="text-xs uppercase tracking-widest text-stone-500 hover:text-stone-900 transition-colors font-medium">LinkedIn</a></li>
+        <li><a href="#projects" class="text-xs uppercase tracking-widest text-stone-600 hover:text-stone-900 transition-colors font-medium">Projects</a></li>
+        <li><a href="#about" class="text-xs uppercase tracking-widest text-stone-600 hover:text-stone-900 transition-colors font-medium">About</a></li>
+        <li><a href="https://github.com/MarketingPip" target="_blank" rel="noopener noreferrer" class="text-xs uppercase tracking-widest text-stone-600 hover:text-stone-900 transition-colors font-medium">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/jared-van-valkengoed" target="_blank" rel="noopener noreferrer" class="text-xs uppercase tracking-widest text-stone-600 hover:text-stone-900 transition-colors font-medium">LinkedIn</a></li>
       </ul>
       <button class="md:hidden bg-transparent border-none cursor-pointer p-2" aria-label="Open menu" aria-expanded="false">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
@@ -172,12 +173,12 @@
   <main id="main-view" class="transition-opacity duration-500">
     <section class="max-w-7xl mx-auto px-6 py-24 md:py-32 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
       <div>
-        <span class="text-[10px] uppercase tracking-[0.5em] text-stone-500 mb-6 block">Ontario, Canada</span>
+        <span class="text-[10px] uppercase tracking-[0.5em] text-stone-600 mb-6 block">Ontario, Canada</span>
         <h1 class="text-5xl md:text-7xl font-bold mb-8 leading-tight">
           Jared<br>
           <span class="serif italic font-light">Van Valkengoed.</span>
         </h1>
-        <p class="text-stone-600 text-lg font-light leading-relaxed mb-8">
+        <p class="text-stone-700 text-lg font-light leading-relaxed mb-8">
           A self-taught programmer and entrepreneur. Founder of <strong class="text-stone-900">MarketingPipeline</strong> on GitHub,
           I aim to tackle societal issues beyond coding. Crafting open-source tools to empower developers
           and address broader needs — from terminal emulators to PDF OCR pipelines.
@@ -187,7 +188,7 @@
       <div class="bg-stone-200 aspect-[4/5] flex items-center justify-center p-12 text-center border border-stone-300 relative overflow-hidden">
         <div class="absolute inset-0" style="background: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(168,162,158,0.03) 10px, rgba(168,162,158,0.03) 20px);"></div>
         <div class="border border-stone-400 p-8 relative z-10">
-          <p class="serif italic text-stone-600">"In every line of code, there is an opportunity to solve a problem that helps more than just the developer community."</p>
+          <p class="serif italic text-stone-700">"In every line of code, there is an opportunity to solve a problem that helps more than just the developer community."</p>
         </div>
       </div>
     </section>
@@ -196,19 +197,19 @@
       <div class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
         <div>
           <div class="serif text-4xl font-bold text-stone-900 leading-none">47+</div>
-          <div class="text-[11px] uppercase tracking-[0.2em] text-stone-500 mt-3">Open Source Repos</div>
+          <div class="text-[11px] uppercase tracking-[0.2em] text-stone-600 mt-3">Open Source Repos</div>
         </div>
         <div>
           <div class="serif text-4xl font-bold text-stone-900 leading-none">1K+</div>
-          <div class="text-[11px] uppercase tracking-[0.2em] text-stone-500 mt-3">GitHub Stars</div>
+          <div class="text-[11px] uppercase tracking-[0.2em] text-stone-600 mt-3">GitHub Stars</div>
         </div>
         <div>
           <div class="serif text-4xl font-bold text-stone-900 leading-none">6</div>
-          <div class="text-[11px] uppercase tracking-[0.2em] text-stone-500 mt-3">Pinned Projects</div>
+          <div class="text-[11px] uppercase tracking-[0.2em] text-stone-600 mt-3">Pinned Projects</div>
         </div>
         <div>
           <div class="serif text-4xl font-bold text-stone-900 leading-none">MIT</div>
-          <div class="text-[11px] uppercase tracking-[0.2em] text-stone-500 mt-3">License Philosophy</div>
+          <div class="text-[11px] uppercase tracking-[0.2em] text-stone-600 mt-3">License Philosophy</div>
         </div>
       </div>
     </section>
@@ -217,65 +218,65 @@
       <h2 class="serif text-3xl mb-12">Explore the Archive</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <a href="https://github.com/MarketingPipeline/Termino.js" class="group border border-stone-200 p-8 bg-white hover:shadow-lg transition-all duration-500" target="_blank" rel="noopener noreferrer">
-          <span class="text-xs uppercase tracking-widest text-stone-500 mb-4 block">JavaScript Library</span>
+          <span class="text-xs uppercase tracking-widest text-stone-600 mb-4 block">JavaScript Library</span>
           <h3 class="text-2xl mb-4 group-hover:text-amber-900 transition-colors font-semibold">Termino.js</h3>
-          <p class="text-sm text-stone-600 leading-relaxed mb-6">Create a web-based terminal on any website — great for games, animations, and real-world apps. Pure JavaScript, zero dependencies.</p>
+          <p class="text-sm text-stone-700 leading-relaxed mb-6">Create a web-based terminal on any website — great for games, animations, and real-world apps. Pure JavaScript, zero dependencies.</p>
           <span class="text-xs uppercase tracking-widest font-bold border-b border-stone-900">View Project</span>
         </a>
 
         <a href="https://github.com/MarketingPipeline/Python-Selenium-Action" class="group border border-stone-200 p-8 bg-white hover:shadow-lg transition-all duration-500" target="_blank" rel="noopener noreferrer">
-          <span class="text-xs uppercase tracking-widest text-stone-500 mb-4 block">GitHub Action</span>
+          <span class="text-xs uppercase tracking-widest text-stone-600 mb-4 block">GitHub Action</span>
           <h3 class="text-2xl mb-4 group-hover:text-amber-900 transition-colors font-semibold">Python Selenium Action</h3>
-          <p class="text-sm text-stone-600 leading-relaxed mb-6">Run Selenium with Python via GitHub Actions using headless or non-headless browsers. 188 stars, 43 forks.</p>
+          <p class="text-sm text-stone-700 leading-relaxed mb-6">Run Selenium with Python via GitHub Actions using headless or non-headless browsers. 188 stars, 43 forks.</p>
           <span class="text-xs uppercase tracking-widest font-bold border-b border-stone-900">View Project</span>
         </a>
 
         <a href="https://github.com/MarketingPipeline/OCR-PDF-Action" class="group border border-stone-200 p-8 bg-white hover:shadow-lg transition-all duration-500" target="_blank" rel="noopener noreferrer">
-          <span class="text-xs uppercase tracking-widest text-stone-500 mb-4 block">GitHub Action</span>
+          <span class="text-xs uppercase tracking-widest text-stone-600 mb-4 block">GitHub Action</span>
           <h3 class="text-2xl mb-4 group-hover:text-amber-900 transition-colors font-semibold">OCR PDF Action</h3>
-          <p class="text-sm text-stone-600 leading-relaxed mb-6">A GitHub Action for turning scanned PDFs into searchable documents. Bridging the gap between paper and digital archives.</p>
+          <p class="text-sm text-stone-700 leading-relaxed mb-6">A GitHub Action for turning scanned PDFs into searchable documents. Bridging the gap between paper and digital archives.</p>
           <span class="text-xs uppercase tracking-widest font-bold border-b border-stone-900">View Project</span>
         </a>
 
         <a href="https://github.com/MarketingPipeline/Code-Runner-Web-Component" class="group border border-stone-200 p-8 bg-white hover:shadow-lg transition-all duration-500" target="_blank" rel="noopener noreferrer">
-          <span class="text-xs uppercase tracking-widest text-stone-500 mb-4 block">Web Component</span>
+          <span class="text-xs uppercase tracking-widest text-stone-600 mb-4 block">Web Component</span>
           <h3 class="text-2xl mb-4 group-hover:text-amber-900 transition-colors font-semibold">Code Runner</h3>
-          <p class="text-sm text-stone-600 leading-relaxed mb-6">Run high-level programming languages on your website — static sites included. Supports 50+ languages from Python to Rust.</p>
+          <p class="text-sm text-stone-700 leading-relaxed mb-6">Run high-level programming languages on your website — static sites included. Supports 50+ languages from Python to Rust.</p>
           <span class="text-xs uppercase tracking-widest font-bold border-b border-stone-900">View Project</span>
         </a>
 
         <a href="https://github.com/MarketingPipeline/Markdown-Tag" class="group border border-stone-200 p-8 bg-white hover:shadow-lg transition-all duration-500" target="_blank" rel="noopener noreferrer">
-          <span class="text-xs uppercase tracking-widest text-stone-500 mb-4 block">Web Component</span>
+          <span class="text-xs uppercase tracking-widest text-stone-600 mb-4 block">Web Component</span>
           <h3 class="text-2xl mb-4 group-hover:text-amber-900 transition-colors font-semibold">Markdown Tag</h3>
-          <p class="text-sm text-stone-600 leading-relaxed mb-6">Render Markdown to HTML on any website using a simple <code>&lt;md&gt;</code> tag. 463 stars of developer convenience.</p>
+          <p class="text-sm text-stone-700 leading-relaxed mb-6">Render Markdown to HTML on any website using a simple <code>&lt;md&gt;</code> tag. 463 stars of developer convenience.</p>
           <span class="text-xs uppercase tracking-widest font-bold border-b border-stone-900">View Project</span>
         </a>
 
         <a href="https://github.com/MarketingPipeline/Tarot.js" class="group border border-stone-200 p-8 bg-white hover:shadow-lg transition-all duration-500" target="_blank" rel="noopener noreferrer">
-          <span class="text-xs uppercase tracking-widest text-stone-500 mb-4 block">JavaScript Library</span>
+          <span class="text-xs uppercase tracking-widest text-stone-600 mb-4 block">JavaScript Library</span>
           <h3 class="text-2xl mb-4 group-hover:text-amber-900 transition-colors font-semibold">Tarot.js</h3>
-          <p class="text-sm text-stone-600 leading-relaxed mb-6">A powerful and customizable JavaScript library for creating and managing Tarot card decks, custom spreads, and readings.</p>
+          <p class="text-sm text-stone-700 leading-relaxed mb-6">A powerful and customizable JavaScript library for creating and managing Tarot card decks, custom spreads, and readings.</p>
           <span class="text-xs uppercase tracking-widest font-bold border-b border-stone-900">View Project</span>
         </a>
 
         <a href="https://github.com/MarketingPipeline/Awesome-Repo-Template" class="group border border-stone-200 p-8 bg-white hover:shadow-lg transition-all duration-500" target="_blank" rel="noopener noreferrer">
-          <span class="text-xs uppercase tracking-widest text-stone-500 mb-4 block">Template</span>
+          <span class="text-xs uppercase tracking-widest text-stone-600 mb-4 block">Template</span>
           <h3 class="text-2xl mb-4 group-hover:text-amber-900 transition-colors font-semibold">Awesome Repo Template</h3>
-          <p class="text-sm text-stone-600 leading-relaxed mb-6">An awesome repo template packed with tons of tools to kick-start your next project. 209 stars, 48 forks.</p>
+          <p class="text-sm text-stone-700 leading-relaxed mb-6">An awesome repo template packed with tons of tools to kick-start your next project. 209 stars, 48 forks.</p>
           <span class="text-xs uppercase tracking-widest font-bold border-b border-stone-900">View Project</span>
         </a>
 
         <a href="https://github.com/MarketingPipeline/Awesome-CSS-Resources" class="group border border-stone-200 p-8 bg-white hover:shadow-lg transition-all duration-500" target="_blank" rel="noopener noreferrer">
-          <span class="text-xs uppercase tracking-widest text-stone-500 mb-4 block">Resource List</span>
+          <span class="text-xs uppercase tracking-widest text-stone-600 mb-4 block">Resource List</span>
           <h3 class="text-2xl mb-4 group-hover:text-amber-900 transition-colors font-semibold">CSS / SCSS Resources</h3>
-          <p class="text-sm text-stone-600 leading-relaxed mb-6">An awesome list of CSS / SCSS frameworks and resources curated for developers who care about design.</p>
+          <p class="text-sm text-stone-700 leading-relaxed mb-6">An awesome list of CSS / SCSS frameworks and resources curated for developers who care about design.</p>
           <span class="text-xs uppercase tracking-widest font-bold border-b border-stone-900">View Project</span>
         </a>
 
         <a href="https://github.com/sponsors/MarketingPipeline" class="group border border-stone-200 p-8 bg-white hover:shadow-lg transition-all duration-500" target="_blank" rel="noopener noreferrer">
-          <span class="text-xs uppercase tracking-widest text-stone-500 mb-4 block">Support</span>
+          <span class="text-xs uppercase tracking-widest text-stone-600 mb-4 block">Support</span>
           <h3 class="text-2xl mb-4 group-hover:text-amber-900 transition-colors font-semibold">Sponsor My Work</h3>
-          <p class="text-sm text-stone-600 leading-relaxed mb-6">Help sustain open-source development. Every contribution fuels new tools, libraries, and resources for the developer community.</p>
+          <p class="text-sm text-stone-700 leading-relaxed mb-6">Help sustain open-source development. Every contribution fuels new tools, libraries, and resources for the developer community.</p>
           <span class="text-xs uppercase tracking-widest font-bold border-b border-stone-900">Become a Sponsor</span>
         </a>
       </div>
@@ -284,12 +285,12 @@
 
   <footer class="border-t border-stone-200 bg-stone-50">
     <div class="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
-      <div class="text-sm text-stone-600">&copy; 2026 Jared Van Valkengoed. Built with curiosity.</div>
+      <div class="text-sm text-stone-700">&copy; 2026 Jared Van Valkengoed. Built with curiosity.</div>
       <ul class="flex gap-6 list-none">
-        <li><a href="https://github.com/MarketingPip" target="_blank" rel="noopener noreferrer" class="text-xs uppercase tracking-widest text-stone-500 hover:text-stone-900 transition-colors">GitHub</a></li>
-        <li><a href="https://github.com/MarketingPipeline" target="_blank" rel="noopener noreferrer" class="text-xs uppercase tracking-widest text-stone-500 hover:text-stone-900 transition-colors">MarketingPipeline</a></li>
-        <li><a href="https://www.linkedin.com/in/jared-van-valkengoed" target="_blank" rel="noopener noreferrer" class="text-xs uppercase tracking-widest text-stone-500 hover:text-stone-900 transition-colors">LinkedIn</a></li>
-        <li><a href="https://marketingpip.github.io/" target="_blank" rel="noopener noreferrer" class="text-xs uppercase tracking-widest text-stone-500 hover:text-stone-900 transition-colors">Blog</a></li>
+        <li><a href="https://github.com/MarketingPip" target="_blank" rel="noopener noreferrer" class="text-xs uppercase tracking-widest text-stone-600 hover:text-stone-900 transition-colors">GitHub</a></li>
+        <li><a href="https://github.com/MarketingPipeline" target="_blank" rel="noopener noreferrer" class="text-xs uppercase tracking-widest text-stone-600 hover:text-stone-900 transition-colors">MarketingPipeline</a></li>
+        <li><a href="https://www.linkedin.com/in/jared-van-valkengoed" target="_blank" rel="noopener noreferrer" class="text-xs uppercase tracking-widest text-stone-600 hover:text-stone-900 transition-colors">LinkedIn</a></li>
+        <li><a href="https://marketingpip.github.io/" target="_blank" rel="noopener noreferrer" class="text-xs uppercase tracking-widest text-stone-600 hover:text-stone-900 transition-colors">Blog</a></li>
       </ul>
     </div>
   </footer>
