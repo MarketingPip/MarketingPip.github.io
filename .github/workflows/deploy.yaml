@@ -25,9 +25,11 @@ jobs:
         env:
           NODE_ENV: production
         run: |
-          npm install glob copy-webpack-plugin purgecss @fullhuman/postcss-purgecss @fortawesome/fontawesome-free purgecss-webpack-plugin
-          npm install --include=dev
-          npm run deploy
+          npm install -g purgecss
+          npm install tailwindcss@3.4.17 postcss autoprefixer
+          echo "✔ Tailwind installed"
+          echo "▶ Compiling Tailwind CSS"
+          npx tailwindcss -i ./assets/css/_tailwind.css -o ./assets/css/tailwind.min.css --minify
 
       # 3. Create Clean Staging & Force Jekyll Processing
       - name: Prepare Final Files 📂
