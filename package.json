@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "postcss src/css/input.css -o dist/css/styles.min.css && cp -r src/index.html dist/ && cp -r src/js dist/ 2>/dev/null || true",
-    "build:prod": "NODE_ENV=production postcss src/css/input.css -o dist/css/styles.min.css && cp index.html dist/ && cp -r src/js dist/ 2>/dev/null || true",
+    "build:prod": "NODE_ENV=production postcss src/css/input.css -o dist/css/styles.min.css && cp index.html dist/ && cp robots.txt dist/ && cp -r src/js dist/ 2>/dev/null || true",
     "watch": "postcss src/css/input.css -o dist/css/styles.min.css --watch",
     "serve": "python3 -m http.server 8080 --directory dist"
   },
