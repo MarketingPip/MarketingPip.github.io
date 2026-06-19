@@ -35,7 +35,7 @@ jobs:
       - name: Prepare Final Files 📂
         run: |
           mkdir final_site
-          cp -r website/dist/* final_site/
+          cp -r * final_site/
           
           # THE CRITICAL FIX: Jekyll requires Front Matter (---) to process Liquid variables.
           # This loops through all HTML files and adds empty Front Matter if not present.
