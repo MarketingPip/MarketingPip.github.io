@@ -665,11 +665,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const targetSection = document.querySelector(targetId);
 
       if (targetSection) {
+        event.preventDefault(); // Stop the default instant jump
+
+
         if(isOpen()){
          closeMenu();
         };
-        event.preventDefault(); // Stop the default instant jump
-
         // Set this to your header's height (in pixels) if you have a fixed navbar
         const headerOffset = 96; 
         
