@@ -643,6 +643,55 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const isOpen = () => mobileMenu.classList.contains('translate-x-0');
 
+
+
+
+
+
+  /* Smooth Scrollings */ 
+
+   document.addEventListener('click', (event) => {
+    // Find the closest anchor tag if the user clicked an inner element
+    const link = event.target.closest('a');
+    
+    // Check if a link was clicked, and if its href starts with "#"
+    if (link && link.getAttribute('href')?.startsWith('#')) {
+      const targetId = link.getAttribute('href');
+      
+      // If it's just a blank dummy link "#", ignore it
+      if (targetId === '#') return;
+
+      // 2. Try to find the matching section on the page
+      const targetSection = document.querySelector(targetId);
+
+      if (targetSection) {
+        if(isOpen()){
+         closeMenu();
+        };
+        event.preventDefault(); // Stop the default instant jump
+
+        // Set this to your header's height (in pixels) if you have a fixed navbar
+        const headerOffset = 96; 
+        
+        // Calculate the exact position to scroll to
+        const elementPosition = targetSection.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+        // 3. Smoothly scroll to the target
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+
+        // Optional: Update the browser URL hash without triggering a jump
+        window.history.pushState(null, null, targetId);
+      }
+    }
+  });
+  
+  
+
+  
   /* ------------------------
      Event Handlers
   ------------------------ */
@@ -739,46 +788,5 @@ document.addEventListener('DOMContentLoaded', () => {
   menuToggle.addEventListener('click', toggleMenu);
 });
 </script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-  // 1. Listen for clicks on the entire document
-  document.addEventListener('click', (event) => {
-    // Find the closest anchor tag if the user clicked an inner element
-    const link = event.target.closest('a');
-    
-    // Check if a link was clicked, and if its href starts with "#"
-    if (link && link.getAttribute('href')?.startsWith('#')) {
-      const targetId = link.getAttribute('href');
-      
-      // If it's just a blank dummy link "#", ignore it
-      if (targetId === '#') return;
-
-      // 2. Try to find the matching section on the page
-      const targetSection = document.querySelector(targetId);
-
-      if (targetSection) {
-        event.preventDefault(); // Stop the default instant jump
-
-        // Set this to your header's height (in pixels) if you have a fixed navbar
-        const headerOffset = 96; 
-        
-        // Calculate the exact position to scroll to
-        const elementPosition = targetSection.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.scrollY - headerOffset;
-
-        // 3. Smoothly scroll to the target
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth'
-        });
-
-        // Optional: Update the browser URL hash without triggering a jump
-        window.history.pushState(null, null, targetId);
-      }
-    }
-  });
-});
-  </script>
   
 </html>
