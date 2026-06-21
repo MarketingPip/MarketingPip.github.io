@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Jared Van Valkengoed — Philosophy, Law, Code & History</title>
+  <meta name="description" content="Writings by Jared Van Valkengoed on philosophy, law, coding, history, and whatever else crosses his mind. Self-taught programmer and entrepreneur from Ontario, Canada.">
+  <meta name="keywords" content="Jared Van Valkengoed, blog, philosophy, law, coding, history, essays, writings, Ontario, Canada">
+  <meta name="author" content="Jared Van Valkengoed">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Blog | Jared Van Valkengoed — Philosophy, Law, Code & History">
+  <meta property="og:description" content="Writings by Jared Van Valkengoed on philosophy, law, coding, history, and whatever else crosses his mind.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jaredvanvalkengoed.dev/blog/">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/86180097">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog | Jared Van Valkengoed">
+  <meta name="twitter:description" content="Writings on philosophy, law, coding, history, and more.">
+  <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/86180097">
+  <link rel="canonical" href="https://jaredvanvalkengoed.dev/blog/">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✍️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+          colors: {
+            stone: {
+              50: '#fafaf9',
+              100: '#f5f5f4',
+              200: '#e7e5e4',
+              300: '#d6d3d1',
+              400: '#a8a29e',
+              500: '#78716c',
+              600: '#57534e',
+              900: '#1c1917',
+            },
+            amber: {
+              900: '#78350f',
+            },
+          }
+        }
+      }
+    }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Jared Van Valkengoed's Blog",
+    "description": "Writings on philosophy, law, coding, history, and whatever else crosses my mind.",
+    "url": "https://jaredvanvalkengoed.dev/blog/",
+    "author": {
+      "@type": "Person",
+      "name": "Jared Van Valkengoed",
+      "url": "https://jaredvanvalkengoed.dev"
+    },
+    "blogPost": [
+      {
+        "@type": "BlogPosting",
+        "headline": "The Open-Source Imperative: Why Code Should Be Free",
+        "description": "On the philosophical and practical case for open-source software as a public good.",
+        "url": "https://jaredvanvalkengoed.dev/blog/open-source-imperative.html",
+        "datePublished": "2026-06-15",
+        "author": {
+          "@type": "Person",
+          "name": "Jared Van Valkengoed"
+        }
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Heritage and the Law: Why Old Buildings Matter",
+        "description": "Reflections on property rights, community memory, and the legal frameworks that protect our built history.",
+        "url": "https://jaredvanvalkengoed.dev/blog/heritage-law.html",
+        "datePublished": "2026-05-22",
+        "author": {
+          "@type": "Person",
+          "name": "Jared Van Valkengoed"
+        }
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Terminal Emulators and the Joy of Plain Text",
+        "description": "Why I built Termino.js and what the command line still teaches us about computing.",
+        "url": "https://jaredvanvalkengoed.dev/blog/terminal-emulators.html",
+        "datePublished": "2026-04-10",
+        "author": {
+          "@type": "Person",
+          "name": "Jared Van Valkengoed"
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8f7f2;
+    }
+    h1, h2, h3, .serif {
+      font-family: 'Playfair Display', serif;
+    }
+    .glass-nav {
+      background-color: rgba(248, 247, 242, 0.8);
+      backdrop-filter: blur(8px);
+    }
+    .post-card:hover .post-title {
+      color: #78350f;
+    }
+    @media print {
+      @page { margin: 0; }
+      body {
+        margin: 2cm;
+        background: white !important;
+        color: black !important;
+      }
+      nav, footer, button, .no-print {
+        display: none !important;
+      }
+    }
+  </style>
+<base target="_blank">
+</head>
+<body>
+  <nav class="glass-nav fixed top-0 left-0 right-0 z-50 border-b border-stone-200/60">
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
+      <a href="../" class="serif text-xl font-bold tracking-tight" aria-label="Jared Van Valkengoed home">J.V.V.</a>
+      <ul class="hidden md:flex gap-8 list-none">
+        <li><a href="../#projects" class="text-xs uppercase tracking-widest text-stone-600 hover:text-stone-900 transition-colors font-medium">Projects</a></li>
+        <li><a href="../#about" class="text-xs uppercase tracking-widest text-stone-600 hover:text-stone-900 transition-colors font-medium">About</a></li>
+        <li><a href="./" class="text-xs uppercase tracking-widest text-stone-900 transition-colors font-medium border-b border-stone-900 pb-0.5">Blog</a></li>
+        <li><a href="https://github.com/MarketingPip" target="_blank" rel="noopener noreferrer" class="text-xs uppercase tracking-widest text-stone-600 hover:text-stone-900 transition-colors font-medium">GitHub</a></li>
+      </ul>
+      <button class="md:hidden bg-transparent border-none cursor-pointer p-2" aria-label="Open menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <main class="max-w-7xl mx-auto px-6 pt-24 md:pt-32 pb-20">
+    <!-- Blog Header -->
+    <section class="mb-16 md:mb-24">
+      <span class="text-[10px] uppercase tracking-[0.5em] text-stone-600 mb-6 block">Writings</span>
+      <h1 class="text-5xl md:text-7xl font-bold mb-8 leading-tight">
+        The<br>
+        <span class="serif italic font-light">Journal.</span>
+      </h1>
+      <p class="text-stone-700 text-lg font-light leading-relaxed max-w-2xl">
+        Thoughts on philosophy, law, code, history, and whatever else crosses my mind. 
+        No niche. No algorithm. Just writing.
+      </p>
+    </section>
+
+    <!-- Filter Tags -->
+<section class="mb-12">
+  <div id="dynamic-tags-container" class="flex flex-wrap gap-3 items-center">
+    <button data-category="all" class="tag-btn text-xs uppercase tracking-widest border border-stone-900 px-4 py-2 bg-stone-900 text-white transition">All</button>
+    
+    </div>
+
+  <div id="dynamic-extra-tags-panel" class="hidden flex flex-wrap gap-3 mt-3 pt-3 border-t border-stone-100"></div>
+</section>
+
+    <!-- Blog Posts Grid -->
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Post 1 -->
+      <article class="post-card group border border-stone-200 bg-white hover:shadow-lg transition-all duration-500">
+        <a href="open-source-imperative.html" class="block p-8">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-[10px] uppercase tracking-[0.2em] text-stone-600 border border-stone-300 px-2 py-1">Philosophy</span>
+            <span class="text-[10px] uppercase tracking-[0.2em] text-stone-600">Jun 15, 2026</span>
+          </div>
+          <h2 class="post-title text-2xl mb-4 font-semibold transition-colors">The Open-Source Imperative: Why Code Should Be Free</h2>
+          <p class="text-sm text-stone-700 leading-relaxed mb-6">On the philosophical and practical case for open-source software as a public good — and why proprietary walls hurt more than they help.</p>
+          <span class="text-xs uppercase tracking-widest font-bold border-b border-stone-900">Read Essay</span>
+        </a>
+      </article>
+
+      <!-- Post 2 -->
+      <article class="post-card group border border-stone-200 bg-white hover:shadow-lg transition-all duration-500">
+        <a href="heritage-law.html" class="block p-8">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-[10px] uppercase tracking-[0.2em] text-stone-600 border border-stone-300 px-2 py-1">Law</span>
+            <span class="text-[10px] uppercase tracking-[0.2em] text-stone-600">May 22, 2026</span>
+          </div>
+          <h2 class="post-title text-2xl mb-4 font-semibold transition-colors">Heritage and the Law: Why Old Buildings Matter</h2>
+          <p class="text-sm text-stone-700 leading-relaxed mb-6">Reflections on property rights, community memory, and the legal frameworks that protect our built history — from Crediton to the broader conversation.</p>
+          <span class="text-xs uppercase tracking-widest font-bold border-b border-stone-900">Read Essay</span>
+        </a>
+      </article>
+
+      <!-- Post 3 -->
+      <article class="post-card group border border-stone-200 bg-white hover:shadow-lg transition-all duration-500">
+        <a href="terminal-emulators.html" class="block p-8">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-[10px] uppercase tracking-[0.2em] text-stone-600 border border-stone-300 px-2 py-1">Code</span>
+            <span class="text-[10px] uppercase tracking-[0.2em] text-stone-600">Apr 10, 2026</span>
+          </div>
+          <h2 class="post-title text-2xl mb-4 font-semibold transition-colors">Terminal Emulators and the Joy of Plain Text</h2>
+          <p class="text-sm text-stone-700 leading-relaxed mb-6">Why I built Termino.js and what the command line still teaches us about computing, simplicity, and human-computer interaction.</p>
+          <span class="text-xs uppercase tracking-widest font-bold border-b border-stone-900">Read Essay</span>
+        </a>
+      </article>
+
+      <!-- Post 4 -->
+      <article class="post-card group border border-stone-200 bg-white hover:shadow-lg transition-all duration-500">
+        <a href="crediton-history.html" class="block p-8">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-[10px] uppercase tracking-[0.2em] text-stone-600 border border-stone-300 px-2 py-1">History</span>
+            <span class="text-[10px] uppercase tracking-[0.2em] text-stone-600">Mar 28, 2026</span>
+          </div>
+          <h2 class="post-title text-2xl mb-4 font-semibold transition-colors">Small-Town Archives: Preserving Crediton's Stories</h2>
+          <p class="text-sm text-stone-700 leading-relaxed mb-6">On digitizing community cookbooks, local newspapers, and the fragile paper trail of rural Ontario life before it disappears.</p>
+          <span class="text-xs uppercase tracking-widest font-bold border-b border-stone-900">Read Essay</span>
+        </a>
+      </article>
+
+      <!-- Post 5 -->
+      <article class="post-card group border border-stone-200 bg-white hover:shadow-lg transition-all duration-500">
+        <a href="self-taught.html" class="block p-8">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-[10px] uppercase tracking-[0.2em] text-stone-600 border border-stone-300 px-2 py-1">Society</span>
+            <span class="text-[10px] uppercase tracking-[0.2em] text-stone-600">Feb 14, 2026</span>
+          </div>
+          <h2 class="post-title text-2xl mb-4 font-semibold transition-colors">The Self-Taught Path: On Learning Without a Degree</h2>
+          <p class="text-sm text-stone-700 leading-relaxed mb-6">Reflections on autodidacticism, the democratization of knowledge, and why the traditional credentialing system is overdue for disruption.</p>
+          <span class="text-xs uppercase tracking-widest font-bold border-b border-stone-900">Read Essay</span>
+        </a>
+      </article>
+
+      <!-- Post 6 -->
+      <article class="post-card group border border-stone-200 bg-white hover:shadow-lg transition-all duration-500">
+        <a href="markdown-everywhere.html" class="block p-8">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-[10px] uppercase tracking-[0.2em] text-stone-600 border border-stone-300 px-2 py-1">Code</span>
+            <span class="text-[10px] uppercase tracking-[0.2em] text-stone-600">Jan 30, 2026</span>
+          </div>
+          <h2 class="post-title text-2xl mb-4 font-semibold transition-colors">Markdown Everywhere: The Case for Universal Plain Text</h2>
+          <p class="text-sm text-stone-700 leading-relaxed mb-6">Why I built Markdown-Tag and why I believe Markdown should be as ubiquitous as HTML — a love letter to readable markup.</p>
+          <span class="text-xs uppercase tracking-widest font-bold border-b border-stone-900">Read Essay</span>
+        </a>
+      </article>
+    </section>
+
+    <!-- Pagination -->
+    <section class="mt-16 flex justify-between items-center">
+      <span class="text-sm text-stone-600">Showing 6 of 6 posts</span>
+      <div class="flex gap-2">
+        <span class="text-xs uppercase tracking-widest border border-stone-900 px-4 py-2 bg-stone-900 text-white">1</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-stone-200 bg-stone-50">
+    <div class="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="text-sm text-stone-700">&copy; 2026 Jared Van Valkengoed. Built with curiosity.</div>
+      <ul class="flex gap-6 list-none">
+        <li><a href="https://github.com/MarketingPip" target="_blank" rel="noopener noreferrer" class="text-xs uppercase tracking-widest text-stone-600 hover:text-stone-900 transition-colors">GitHub</a></li>
+        <li><a href="https://github.com/MarketingPipeline" target="_blank" rel="noopener noreferrer" class="text-xs uppercase tracking-widest text-stone-600 hover:text-stone-900 transition-colors">MarketingPipeline</a></li>
+        <li><a href="https://www.linkedin.com/in/jared-van-valkengoed" target="_blank" rel="noopener noreferrer" class="text-xs uppercase tracking-widest text-stone-600 hover:text-stone-900 transition-colors">LinkedIn</a></li>
+        <li><a href="../" class="text-xs uppercase tracking-widest text-stone-600 hover:text-stone-900 transition-colors">Home</a></li>
+      </ul>
+    </div>
+  </footer>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const postCards = document.querySelectorAll('.post-card');
+  const tagsContainer = document.getElementById('dynamic-tags-container');
+  const extraTagsPanel = document.getElementById('dynamic-extra-tags-panel');
+  const paginationText = document.querySelector('main > section:last-of-type span');
+
+  const MAX_VISIBLE_TAGS = 4; // How many tags to show before hiding the rest
+  const activeClasses = ['bg-stone-900', 'text-white', 'border-stone-900'];
+  const inactiveClasses = ['border-stone-300', 'hover:border-stone-900', 'hover:bg-stone-900', 'hover:text-white'];
+
+  // 1. Gather all unique categories from the actual HTML posts
+  const categoriesSet = new Set();
+  postCards.forEach(card => {
+    const categoryElement = card.querySelector('div > span:first-of-type');
+    if (categoryElement) {
+      categoriesSet.add(categoryElement.textContent.trim());
+    }
+  });
+
+  // Convert to sorted array
+  const uniqueCategories = Array.from(categoriesSet).sort();
+
+  // 2. Dynamically build and inject the buttons
+  uniqueCategories.forEach((category, index) => {
+    const btn = document.createElement('button');
+    btn.textContent = category;
+    btn.setAttribute('data-category', category.toLowerCase());
+    btn.className = "tag-btn text-xs uppercase tracking-widest border border-stone-300 px-4 py-2 hover:border-stone-900 hover:bg-stone-900 hover:text-white transition";
+
+    // Decides if it goes to main container or hidden overflow panel
+    if (index < MAX_VISIBLE_TAGS) {
+      tagsContainer.appendChild(btn);
+    } else {
+      extraTagsPanel.appendChild(btn);
+    }
+  });
+
+  // 3. Setup the "+ More" expansion toggle if limit is exceeded
+  if (uniqueCategories.length > MAX_VISIBLE_TAGS) {
+    const toggleBtn = document.createElement('button');
+    toggleBtn.className = "text-xs uppercase tracking-widest text-stone-500 hover:text-stone-900 underline underline-offset-4 ml-2";
+    toggleBtn.textContent = `+ More Categories (${uniqueCategories.length - MAX_VISIBLE_TAGS})`;
+    
+    tagsContainer.appendChild(toggleBtn);
+
+    toggleBtn.addEventListener('click', () => {
+      const isHidden = extraTagsPanel.classList.contains('hidden');
+      if (isHidden) {
+        extraTagsPanel.classList.remove('hidden');
+        toggleBtn.textContent = '− Show Less';
+      } else {
+        extraTagsPanel.classList.add('hidden');
+        toggleBtn.textContent = `+ More Categories (${uniqueCategories.length - MAX_VISIBLE_TAGS})`;
+      }
+    });
+  }
+
+  // 4. Combined Filtering Action Event
+  const allTagButtons = document.querySelectorAll('[data-category]');
+
+  allTagButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const selectedCategory = button.getAttribute('data-category');
+
+      // Update button visual states
+      allTagButtons.forEach(btn => {
+        btn.classList.remove(...activeClasses);
+        btn.classList.add(...inactiveClasses);
+      });
+      button.classList.remove(...inactiveClasses);
+      button.classList.add(...activeClasses);
+
+      // Filter your blog grid items
+      let visibleCount = 0;
+      postCards.forEach(card => {
+        const cardCategoryElement = card.querySelector('div > span:first-of-type');
+        const cardCategory = cardCategoryElement ? cardCategoryElement.textContent.trim().toLowerCase() : '';
+
+        if (selectedCategory === 'all' || cardCategory === selectedCategory) {
+          card.style.display = 'block';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      // Keep counter string updated
+      if (paginationText) {
+        paginationText.textContent = `Showing ${visibleCount} of ${postCards.length} posts`;
+      }
+    });
+  });
+});
+  </script>
+</body>
+</html>
